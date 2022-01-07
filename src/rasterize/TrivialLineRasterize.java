@@ -2,6 +2,9 @@ package rasterize;
 
 public class TrivialLineRasterize extends LineRasterizer {
 
+    //vyhody trivialniho algoritmu - vyuzitelny i pro slozitejsi krivky
+    //nevyhodou je nasobeni a scitani
+
     public TrivialLineRasterize(Raster raster) {
         super(raster);
     }
