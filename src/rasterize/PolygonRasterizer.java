@@ -1,11 +1,6 @@
 package rasterize;
 
-import control.Controller2D;
-import model.Point;
 import model.Polygon;
-
-import java.awt.*;
-import java.util.List;
 
 
 public class PolygonRasterizer {

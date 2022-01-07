@@ -6,6 +6,7 @@ import java.awt.*;
 public class Window extends JFrame {
 
     public final Panel panel;
+//    public final Panel2 panel2;
 
     public Window() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -15,8 +16,10 @@ public class Window extends JFrame {
 
 
         panel = new Panel();
+//        panel2 = new Panel2();
 
         add(panel, BorderLayout.CENTER);
+//        add(panel2,BorderLayout.NORTH);
         setVisible(true);
         pack();
 

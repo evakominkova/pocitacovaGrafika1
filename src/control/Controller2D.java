@@ -3,26 +3,25 @@ package control;
 import fill.ScanLine;
 import fill.SeedFill;
 import fill.SeedFillBorder;
-import model.Line;
 import model.Point;
 import model.Polygon;
-//import model.Triangle;
 import model.Triangle;
 import rasterize.*;
-
-import javax.swing.*;
 import view.Panel;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+//import model.Triangle;
+
 public class Controller2D implements Controller {
 
-    private final Panel panel;
     private final Raster raster;
+    private final Panel panel;
 
     private LineRasterizer trivialLineRasterizer;
     private DDALineRasterize ddaLineRasterize;

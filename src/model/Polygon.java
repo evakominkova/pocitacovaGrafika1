@@ -1,8 +1,6 @@
 package model;
 
-import control.Controller2D;
 import rasterize.LineRasterizer;
-import rasterize.Raster;
 
 import java.awt.*;
 import java.util.ArrayList;

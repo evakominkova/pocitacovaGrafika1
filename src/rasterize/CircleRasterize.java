@@ -12,6 +12,8 @@ public class CircleRasterize extends LineRasterizer{
     @Override
     public void rasterize(int x1, int y1, int x2, int y2, int color) {
         int r = (int)Math.round(Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2)));
+        // math.sqrt =   druha odmocnina
+        // math.pow  = exponent
         int x=0, y=r,d=3-(2*r);
 
         EightWaySymmetricPlot(x1,y1,x,y,color);
@@ -34,14 +36,13 @@ public class CircleRasterize extends LineRasterizer{
 
     void  EightWaySymmetricPlot(int xc,int yc,int x,int y,int color)
     {
-
-        raster.setPixel(x+xc,y+yc,0xf00f0f);
+        raster.setPixel(x+xc,y+yc,0xf00000);
         raster.setPixel(x+xc,-y+yc,color);
-        raster.setPixel(-x+xc,-y+yc,0xf00f0f);
+        raster.setPixel(-x+xc,-y+yc,0xf00000);
         raster.setPixel(-x+xc,y+yc,color);
-        raster.setPixel(y+xc,x+yc,0xf00f0f);
+        raster.setPixel(y+xc,x+yc,0xf00000);
         raster.setPixel(y+xc,-x+yc,color);
-        raster.setPixel(-y+xc,-x+yc,0xf00f0f);
+        raster.setPixel(-y+xc,-x+yc,0xf00000);
         raster.setPixel(-y+xc,x+yc,color);
     }
 }
